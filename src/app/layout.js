@@ -1,11 +1,12 @@
 import { Inter } from 'next/font/google'
-import Navigation from './components/Navigation'
+import Navigation from '../../components/Navigation'
+import '../../styles/globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <head>
         <title>Hola</title>
       </head>
@@ -14,5 +15,5 @@ export default function RootLayout({ children }) {
         {children}
       </body>
     </html>
-  );
+  )
 }
