@@ -12,8 +12,8 @@ export default function Navigation () {
       route: '/about'
     },
     {
-      label: "Posts",
-      route: "/posts"
+      label: 'Posts',
+      route: '/posts'
     }
   ]
 
