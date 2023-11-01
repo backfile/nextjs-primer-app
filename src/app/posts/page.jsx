@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Like } from './Like'
 
 //  React server component
@@ -16,7 +17,9 @@ export default async function PostPage () {
     <ul>
       {posts.slice(0, 5).map((post) => (
         <li key={post.id}>
-          <p>{post.title}</p>
+          <Link href={`/posts/${post.id}`}>
+            <p>{post.title}</p>
+          </Link>
           <Like />
         </li>
       ))}
