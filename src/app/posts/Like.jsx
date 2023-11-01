@@ -7,8 +7,9 @@ export function Like () {
 
   return (
     <>
-      <button onClick={() => setLike(!like)}> Like </button>
-      <p>{like ? 'Le gusta' : 'No le gusta'}</p>
+      <button onClick={() => setLike(!like)}>
+        {like ? '💓' : '🤍'}
+      </button>
     </>
   )
 }

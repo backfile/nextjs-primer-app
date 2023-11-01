@@ -4,8 +4,8 @@ import '../../styles/globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function RootLayout({ children }) {
-  console.log("Hola") // No se ejecuta en el cliente xq se renderiza en el servidor
+export default function RootLayout ({ children }) {
+  console.log('Hola') // No se ejecuta en el cliente xq se renderiza en el servidor
 
   return (
     <html lang='en'>
