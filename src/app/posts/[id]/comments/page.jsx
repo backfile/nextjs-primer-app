@@ -1,6 +1,6 @@
-
 const fetchSinglePost = async (id) => {
   await new Promise(resolve => setTimeout(resolve, 3000))
+  throw new Error("Error")
 
   return fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`, {
     next: {
