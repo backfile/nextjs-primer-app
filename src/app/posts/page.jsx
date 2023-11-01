@@ -8,7 +8,7 @@ const fetchData = () => {
   // getServerSideProps
   // return fetch('https://jsonplaceholder.typicode.com/posts', { cache: 'no-store' }).then(res => res.json())
 
-  // Incremental Static Regeneration
+  // incremental static regeneration
   return fetch('https://jsonplaceholder.typicode.com/posts', {
     next: {
       revalidate: 50
